@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.uurp.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"UURPClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

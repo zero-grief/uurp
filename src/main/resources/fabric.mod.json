@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "uurp",
+	"version": "${version}",
+	"name": "UURP",
+	"description": "Ultimate Unlimited Role-Play - A remake of Custom Item Models-mod",
+	"authors": [
+		".rexam"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/uurp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.uurp.UURP"
+		],
+		"client": [
+			"com.uurp.UURPModClient"
+		],
+		"fabric-datagen": [
+			"com.uurp.UURPDataGenerator"
+		]
+	},
+	"mixins": [
+		"uurp.mixins.json",
+		{
+			"config": "uurp.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
